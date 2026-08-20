@@ -23,6 +23,11 @@ docker-compose up
 
 Base URL: `http://localhost:8000/`
 
+## Tasks
+
+1. Setting up the workspace: Vite, Yarn, port 3000.
+2. Adding the general use components: Input, SelectInput, Button, SearchBar.
+
 ## Author
 
 Clément DEFER
