@@ -27,6 +27,7 @@ Base URL: `http://localhost:8000/`
 
 1. Setting up the workspace: Vite, Yarn, port 3000.
 2. Adding the general use components: Input, SelectInput, Button, SearchBar.
+3. Initialize the main App component: auth check, Dashboard or Authentication.
 
 ## Author
 
