@@ -24,7 +24,7 @@ function Login({ username, password, setUsername, setPassword }) {
         />
       </div>
       <div className="auth-submit">
-        <Button label="Sign In" icon={faKey} />
+        <Button label="Sign In" icon={faKey} type="submit" />
       </div>
     </div>
   );

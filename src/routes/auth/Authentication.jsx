@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import axios from 'axios';
 import Button from '../../components/general/Button';
 import Login from './Login';
 import Register from './Register';
@@ -11,6 +12,16 @@ function Authentication({ setIsLoggedIn, setUserUsername }) {
 
   function handleSubmit(event) {
     event.preventDefault();
+
+    const url = _switch
+      ? 'http://localhost:8000/api/auth/login'
+      : 'http://localhost:8000/api/auth/register';
+
+    axios.post(url, { username, password }).then((response) => {
+      localStorage.setItem('accessToken', response.data.accessToken);
+      setUserUsername(username);
+      setIsLoggedIn(true);
+    });
   }
 
   return (

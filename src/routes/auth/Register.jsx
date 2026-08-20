@@ -24,7 +24,7 @@ function Register({ username, password, setUsername, setPassword }) {
         />
       </div>
       <div className="auth-submit">
-        <Button label="Sign Up" icon={faPlus} />
+        <Button label="Sign Up" icon={faPlus} type="submit" />
       </div>
     </div>
   );
