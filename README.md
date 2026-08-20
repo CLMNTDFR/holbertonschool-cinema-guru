@@ -31,6 +31,7 @@ Base URL: `http://localhost:8000/`
 4. Authentication components: Sign In / Sign Up switch, Login and Register.
 5. Authentication API: login/register, store JWT, then enter the app.
 6. Dashboard header: welcome message, avatar and logout.
+7. Sidebar navigation and latest activities.
 
 ## Author
 

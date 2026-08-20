@@ -5,3 +5,10 @@
   min-height: 100vh;
   background-color: #1c1c1c;
 }
+
+.dashboard-body {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  min-height: 0;
+}
