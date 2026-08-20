@@ -2,7 +2,7 @@
 
 Pocket movie app: keep favorites and a watch later list. React with Vite, hooks only, talks to the local API on port 8000.
 
-The frontend runs on port 3000. no class components.
+the frontend runs on port 3000. no class components.
 
 ## Setup
 
@@ -13,7 +13,7 @@ yarn dev
 
 ## Backend
 
-The API lives in `api/`. With Docker running:
+the API lives in `api/`. with Docker running:
 
 ```bash
 cd api
@@ -32,6 +32,7 @@ Base URL: `http://localhost:8000/`
 5. Authentication API: login/register, store JWT, then enter the app.
 6. Dashboard header: welcome message, avatar and logout.
 7. Sidebar navigation and latest activities.
+8. Dashboard routing: /home, /favorites, /watchlater.
 
 ## Author
 
