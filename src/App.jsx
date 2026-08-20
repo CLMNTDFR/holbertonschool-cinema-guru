@@ -35,7 +35,10 @@ function App() {
       {isLoggedIn ? (
         <Dashboard userUsername={userUsername} />
       ) : (
-        <Authentication />
+        <Authentication
+          setIsLoggedIn={setIsLoggedIn}
+          setUserUsername={setUserUsername}
+        />
       )}
     </div>
   );
