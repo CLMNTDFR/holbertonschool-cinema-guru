@@ -40,11 +40,13 @@ function MovieCard({ movie }) {
       axios.delete(url, { headers }).then(() => {
         if (type === 'favorite') setIsFavorite(false);
         else setIsWatchLater(false);
+        window.dispatchEvent(new Event('activitiesUpdated'));
       });
     } else {
       axios.post(url, {}, { headers }).then(() => {
         if (type === 'favorite') setIsFavorite(true);
         else setIsWatchLater(true);
+        window.dispatchEvent(new Event('activitiesUpdated'));
       });
     }
   }

@@ -25,7 +25,7 @@ function SideBar() {
     return name.toLowerCase().replace(/\s+/g, '');
   }
 
-  useEffect(() => {
+  function loadActivities() {
     axios
       .get('http://localhost:8000/api/activity', {
         headers: {
@@ -35,6 +35,13 @@ function SideBar() {
       .then((response) => {
         setActivities(response.data);
       });
+  }
+
+  useEffect(() => {
+    loadActivities();
+
+    window.addEventListener('activitiesUpdated', loadActivities);
+    return () => window.removeEventListener('activitiesUpdated', loadActivities);
   }, []);
 
   return (

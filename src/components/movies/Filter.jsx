@@ -21,6 +21,7 @@ const GENRES = [
 ];
 
 const SORT_OPTIONS = [
+  { value: '', label: 'Default' },
   { value: 'latest', label: 'Latest' },
   { value: 'oldest', label: 'Oldest' },
   { value: 'highestrated', label: 'Highest rated' },

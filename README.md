@@ -34,6 +34,7 @@ Base URL: `http://localhost:8000/`
 7. Sidebar navigation and latest activities.
 8. Dashboard routing: /home, /favorites, /watchlater.
 9. Movie child components: Tag, Filter and MovieCard.
+10. Main pages: HomePage, Favorites and Watch Later.
 
 ## Author
 

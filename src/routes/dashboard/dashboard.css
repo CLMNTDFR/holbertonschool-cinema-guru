@@ -16,4 +16,57 @@
 .dashboard-content {
   flex: 1;
   min-width: 0;
+  overflow-y: auto;
+  color: #ffffff;
+}
+
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 1rem 2rem;
+}
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 0.5rem;
+}
+
+.page-title h1 {
+  position: relative;
+  margin: 0;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.page-title h1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.35rem;
+  width: 100%;
+  height: 4px;
+  background-color: #e31c25;
+}
+
+.movies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  justify-items: center;
+  gap: 1.75rem;
+  margin: 0;
+  padding: 1rem 2rem;
+  list-style: none;
+}
+
+.load-more {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 2rem 1rem;
+}
+
+.load-more .button {
+  width: auto;
+  min-width: 140px;
 }
