@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import './general.css';
 
 function SearchBar({ title, setTitle }) {
@@ -7,11 +9,12 @@ function SearchBar({ title, setTitle }) {
 
   return (
     <div className="search-bar">
+      <FontAwesomeIcon icon={faMagnifyingGlass} />
       <input
         type="text"
         value={title}
         onChange={handleInput}
-        placeholder="Search"
+        placeholder="Search Movies"
       />
     </div>
   );

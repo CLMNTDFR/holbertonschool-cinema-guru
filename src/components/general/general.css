@@ -76,14 +76,24 @@
   background-color: #e31c25;
 }
 
-.search-bar input {
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.6rem;
   width: 500px;
   max-width: 100%;
   padding: 0.5rem 1rem;
-  border: none;
-  outline: none;
   border-radius: 2rem;
   background-color: #2c2c2c;
+  color: #999999;
+}
+
+.search-bar input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
   color: #ffffff;
   font-size: 1.2rem;
 }
